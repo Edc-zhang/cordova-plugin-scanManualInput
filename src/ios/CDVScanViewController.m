@@ -41,7 +41,8 @@ static const CGFloat kMargin = 30;
     [leftButton addTarget:self action:@selector(handleClose:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
     self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:leftItem, nil];
-
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:33/255.0 green:120/255.0 blue:181/255.0 alpha:1.0];
+    
     //    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"关闭" style:UIBarButtonItemStylePlain target:self action:@selector(handleClose:)];
 
     [self setupMaskView];
